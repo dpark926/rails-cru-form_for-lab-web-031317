@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the New page for Songs</h1>
+    <h2>Contains a form</h2>
+
+    <%= form_for(@song) do |f| %>
+      <label>Song Name:</label><br>
+      <%= f.text_field :name %><br>
+
+      <label>Artist ID:</label><br>
+      <%= f.text_field :artist_id %><br>
+
+      <label>Genre ID:</label><br>
+      <%= f.text_field :genre_id %><br>
+
+      <%= f.submit %>
+    <% end %>
+
+  </body>
+</html>

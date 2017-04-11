@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the Genres index page</h1>
+    <h2>Displays all the genres</h2>
+
+    <ul>
+    <%@genres.each do |genre|%>
+      <li><%=genre.name%></li>
+    <%end%>
+    </ul>
+
+  </body>
+</html>

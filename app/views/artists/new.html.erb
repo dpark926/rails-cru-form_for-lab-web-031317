@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the New page for Artists</h1>
+    <h2>Contains a form</h2>
+
+    <%= form_for(@artist) do |f| %>
+      <label>Artist Name:</label><br>
+      <%= f.text_field :name %><br>
+
+      <label>Artist's Bio:</label><br>
+      <%= f.text_area :bio %><br>
+
+      <%= f.submit %>
+    <% end %>
+
+  </body>
+</html>
